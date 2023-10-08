@@ -31,7 +31,7 @@ class GPS_CoTF
    * MSN_LALO：参考点的纬度和经度
    * MSN_XY：参考点在任务坐标系下的坐标
    */
-    GPS_CoTF(const double &_ENU_head_deg=0.0, const Eigen::Vector2d &ENU_LALO, const vector<Eigen::Vector2d> &MSN_LALO, const vector<Eigen::Vector2d> &MSN_XY);
+    GPS_CoTF(const double &_ENU_head_deg, const Eigen::Vector2d &ENU_LALO, const vector<Eigen::Vector2d> &MSN_LALO, const vector<Eigen::Vector2d> &MSN_XY);
   // 任务坐标系坐标 -> ENU坐标系坐标
     Eigen::Vector2d MSN_to_ENU(const Eigen::Vector2d &MSN_XY);
     Eigen::Vector2d MSN_to_ENU(const double &MSN_X, const double &MSN_Y);
